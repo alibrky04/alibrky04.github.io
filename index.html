@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My First Web Page</title>
-    </head>
-    <body>
-        <h1>Welcome to my first web page</h1>
-        <p>This is a paragraph of text that I am writing in my first web page.</p>
-        <p>This is another paragraph of text that I am writing in my first web page.</p>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ali Berkay Görgülü - Portfolio</title>
+    
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+	<header>
+        <img src="image.jpg" alt="Ali Berkay Görgülü" id="profile-img">
+        <h1>Ali Berkay Görgülü</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Software Engineer with expertise in Machine Learning, Blockchain, and Game Development.</p>
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>Machine Learning (TensorFlow, PyTorch)</li>
+			<li>Blockchain (Solidity, Spring)</li>
+			<li>Game Development (Godot, Unity, C#)</li>
+			<li>Web Development (React, Node.js, TailwindCSS)</li>
+		</ul>
+	</section>
+
+	<section id="projects">
+		<h2>Projects</h2>
+		<div class="project">
+			<h3>Connect 4</h3>
+			<p>A pixel style connect 4 game with pvp and pve.</p>
+			<a href="https://github.com/alibrky04/Connect_4" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+		<div class="project">
+			<h3>ArticleChain</h3>
+			<p>Blockchain based academic publishing and reviewing platform.</p>
+			<a href="https://github.com/dev-zgr/Article_Chain" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+        <div class="project">
+			<h3>BePaS</h3>
+			<p>Heuristic models for our paper A proof of concept for Blockchain-Enhanced smart parking system with SDN: BePaS.</p>
+			<a href="https://github.com/alibrky04/BePaS-Heuristic-Model-for-a-Smart-Parking-System" target="_blank"><i class="fab fa-github"></i> </a>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<a href="https://github.com/alibrky04" target="_blank"><i class="fab fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/ali-berkay-görgülü-519020276/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+		<h3>Send me a message</h3>
+		<form id="contact-form">
+			<input type="text" id="name" placeholder="Your Name" required>
+			<input type="email" id="email" placeholder="Your Email" required>
+			<textarea id="message" placeholder="Your Message" required></textarea>
+			<button type="submit">Send</button>
+		</form>
+	</section>
+</body>
 </html>
